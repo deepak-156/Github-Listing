@@ -1,0 +1,33 @@
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>
+
+<ngx-skeleton-loader count="10" appearance="circle">
+</ngx-skeleton-loader>
+
+<ngx-skeleton-loader count="1" appearance="line">
+</ngx-skeleton-loader>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    
+    <div class="w-full max-w-md bg-white rounded-lg p-8 shadow-lg">
+       
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">GitHub Repository Listing</h1>
+       
+        <form action="https://github.com/search">
+            <div class="mb-4">
+                <input class="w-full rounded-md py-2 px-3 text-gray-700 placeholder-gray-400 bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter GitHub Username" name="q" required>
+            </div>
+            
+    <div class="text-center">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">Submit</button>
+            
+            </div>
+        </form>
+    
+    </div>
+</body>
+
+
